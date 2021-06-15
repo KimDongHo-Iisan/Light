@@ -29,8 +29,15 @@ class ViewController: UIViewController {
     func updateUI() {
         if lightOn {
             self.view.backgroundColor = .white //view의 배경색을 흰색으로 변경한다.
+            // button의 이름을 변경하는 함수
+            lightButton.setTitle("Off", for: .normal)
         }else {
             self.view.backgroundColor = .black
+            
+            lightButton.setTitle("Off", for: .normal)
+            // .normal의 뜻 : 어떤 버튼이.사용자의 이벤트를 기다리는 상태
+            // .highlighted : 사용자가 막 탭했을때가
+            // .disabled : 사용이 불가능한 상태
         }
     }
 }
