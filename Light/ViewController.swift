@@ -16,7 +16,8 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        // 앱이 처음 시작할때 "button" 이라는 이름으로 시작된다. 이를 해결하기 위해
+        updateUI() // 이를 추가하면 된다. lightOn이 true인 상태이기 때문에, 흰색 배경으로 시작한다. 
     }
 
 
